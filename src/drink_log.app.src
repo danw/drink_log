@@ -1,0 +1,9 @@
+{application, drink_log,
+ [{description, "Drink Log Retrieval"},
+  {vsn, "1.0"},
+  {modules, [drink_log_app, drink_log]},
+  {registered,[drink_log]},
+  {applications, [kernel, stdlib, sasl]},
+  {mod, {drink_log_app, []}},
+  {start_phases, []}
+]}.
